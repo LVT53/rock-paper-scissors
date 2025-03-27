@@ -15,3 +15,7 @@
 3. Declare the players score variables.
     - Create 2 variables. humanScore and computerScore globally.
     - Give them an initial value of 0.
+
+4. Write the logic to play 1 round of the game.
+
+5. Write the logic to play a whole game of 5 rounds and a function to declare the winner at the end.
