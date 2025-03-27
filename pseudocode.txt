@@ -1,13 +1,17 @@
-1. Create a function getComputerChoice that returns randomly one of these three string values: rock, paper, scissors.
-    - create function
-    - create variable that stores the random result
-    - create the random result
-    - return the random result
-    - log the result in console
+1. Get computer's choice - Create a function getComputerChoice that returns randomly one of these three string values: rock, paper, scissors.
+    - create function.
+    - create variable that stores the random result.
+    - create the random result.
+    - return the random result.
+    - log the result in console.
 
-2. Create a function getHumanChoice that will return one of the valid choices depending on what the user inputs.
-    - create function
-    - ask user for input (rock,paper,scissors) with "prompt"
-    - if statement to define if player won
-    - return round result
-    - log round result with alert
+2. Get human's choice - Create a function getHumanChoice that will return one of the valid choices depending on what the user inputs.
+    - create function.
+    - ask user for input (rock,paper,scissors) with "prompt".
+    - if statement to define if player won.
+    - return round result.
+    - log round result with alert.
+
+3. Declare the players score variables.
+    - Create 2 variables. humanScore and computerScore globally.
+    - Give them an initial value of 0.
