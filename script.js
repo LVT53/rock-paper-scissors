@@ -1,5 +1,6 @@
 let calculateNumber;
 let humanChoice;
+let anyHumanChoice
 let humanScore = 0;
 let computerScore = 0;
 
@@ -13,27 +14,42 @@ function getComputerChoice(max) {
         return "scissors";
     }
 }
-console.log(getComputerChoice(3));
-console.log(getHumanChoice())
+
 function getHumanChoice() {
     humanChoice = prompt("Rock, paper or scissors?","");
-    if (humanChoice === "rock" && calculateNumber === 0) {
+    anyHumanChoice = humanChoice.toLowerCase();
+    return anyHumanChoice;
+}
+
+function playRound(anyHumanChoice, computerChoice) {
+    if (anyHumanChoice === "rock" && calculateNumber === 0) {
         alert("It's a tie!");
-    } else if (humanChoice === "rock" && calculateNumber === 1) {
+    } else if (anyHumanChoice === "rock" && calculateNumber === 1) {
         alert("You lost!");
-    } else if (humanChoice === "rock" && calculateNumber === 2) {
+        computerScore++;
+    } else if (anyHumanChoice === "rock" && calculateNumber === 2) {
         alert("You won!");
-    } else if (humanChoice === "paper" && calculateNumber === 0) {
+        humanScore++;
+    } else if (anyHumanChoice === "paper" && calculateNumber === 0) {
         alert("You won!");
-    } else if (humanChoice === "paper" && calculateNumber === 1) {
+        humanScore++;
+    } else if (anyHumanChoice === "paper" && calculateNumber === 1) {
         alert("It's a tie!");
-    } else if (humanChoice === "paper" && calculateNumber === 2) {
+    } else if (anyHumanChoice === "paper" && calculateNumber === 2) {
         alert("You lost!");
-    } else if (humanChoice === "scissors" && calculateNumber === 0) {
+        computerScore++;
+    } else if (anyHumanChoice === "scissors" && calculateNumber === 0) {
         alert("You lost!");
-    } else if (humanChoice === "scissors" && calculateNumber === 1) {
+        computerScore++;
+    } else if (anyHumanChoice === "scissors" && calculateNumber === 1) {
         alert("You won!");
-    } else if (humanChoice === "scissors" && calculateNumber === 2) {
+        humanScore++;
+    } else if (anyHumanChoice === "scissors" && calculateNumber === 2) {
         alert("It's a tie!");
     }
 }
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice(3);
+
+playRound(humanSelection, computerSelection);
