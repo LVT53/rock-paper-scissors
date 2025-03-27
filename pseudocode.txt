@@ -3,4 +3,11 @@
     - create variable that stores the random result
     - create the random result
     - return the random result
-    - log the result with console
+    - log the result in console
+
+2. Create a function getHumanChoice that will return one of the valid choices depending on what the user inputs.
+    - create function
+    - ask user for input (rock,paper,scissors) with "prompt"
+    - if statement to define if player won
+    - return round result
+    - log round result with alert
