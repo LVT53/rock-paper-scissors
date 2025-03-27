@@ -1,0 +1,6 @@
+1. Create a function getComputerChoice that returns randomly one of these three string values: rock, paper, scissors.
+    - create function
+    - create variable that stores the random result
+    - create the random result
+    - return the random result
+    - log the result with console
